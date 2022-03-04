@@ -6,6 +6,7 @@ import "./App.css";
 // import Repair from "./components/Repair";
 // import Shop from "./components/Shop";
 import Navb from "./components/Navb";
+import PeerCard from "./components/PeerCard";
 
 // import your route components too
 

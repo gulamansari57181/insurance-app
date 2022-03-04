@@ -7,6 +7,7 @@ import Insurance from "./Insurance";
 import Police from "./Police";
 import Repair from "./Repair";
 import Shop from "./Shop";
+import Home from "./Home";
 
 function Navb() {
   return (
@@ -16,12 +17,12 @@ function Navb() {
 
         <Navbar bg="primary" variant="dark">
           <Container>
-            <Nav.Link as={Link} to="/App">
+            <Nav.Link as={Link} to="/">
               <Navbar.Brand> Insurance-App </Navbar.Brand>
             </Nav.Link>
 
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/">
+              <Nav.Link as={Link} to="/Shop">
                 Shop
               </Nav.Link>
               <Nav.Link as={Link} to="/insurance">
@@ -43,7 +44,8 @@ function Navb() {
             <Route path="/insurance" element={<Insurance />}></Route>
             <Route path="/police" element={<Police />}></Route>
             <Route path="/repair" element={<Repair />}></Route>
-            <Route path="/" element={<Shop />}></Route>
+            <Route path="/Shop" element={<Shop />}></Route>
+            <Route path="/" element={<Home />}></Route>
           </Routes>
         </div>
       </>
